@@ -68,10 +68,21 @@ that conflict rather than force a stale backup over user work.
 
 ## Verification and limits
 
-Source XML parsing and dry-run/native-setting comparisons are recorded during
-implementation. Actual deployment hashes and visible runtime behavior must be
-reported separately. Equipped-armor appearance testing was waived for the new
-account. PRK browser/renderer modifications already present are preserved.
+The prepared package and actual installation passed these focused checks:
+
+- 710 deployed file hashes matched the prepared plan.
+- All nine locally copied native definitions (three layouts each containing
+  Settings Root, HotKeys and Skills) matched PRK Default byte-for-byte.
+- All 153 native settings bindings/types/values/categories were preserved.
+- GUIName activation/restoration retained unrelated preferences changed during
+  play; duplicate GUIName values were rejected.
+- The 132 distributed source XML files parsed strictly. Validation of the 142
+  deployment XML definitions also accommodates the client's raw HTML attribute
+  dialect in its native Skills view without changing the deployed bytes.
+
+These are source/deployment checks, not an observed in-game GUI run. Equipped-
+armor appearance testing was waived for the new account. Existing PRK browser/
+renderer modifications were preserved; no launcher or authentication was automated.
 
 No account data, private paths, deployment logs, original sound files, database
 records or backups are part of this repository. Read [AGENTS.md](AGENTS.md)
