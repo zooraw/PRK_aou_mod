@@ -7,3 +7,4 @@ backups/
 *.local.json
 installed.json
 *.log
+*.lnk
