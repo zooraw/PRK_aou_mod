@@ -1,0 +1,18 @@
+PRK AOU Mod
+===========
+
+Read README.md and use Install.ps1 for this Project Rubi-Ka edition.
+Do not manually copy this source into regular Anarchy Online.
+
+Example (replace both generic paths):
+.\Install.ps1 -GamePath 'C:\Games\Project Rubi-Ka\client' -ProfilePath 'C:\LocalPrefs\PRK\client'
+
+The installer selects PRK_AOU_CYT, installs native PRK settings/skills definitions,
+and places /showfile help/scripts in the client's scripts directory too.
+Restart the PRK client normally after installing. No credentials are needed.
+
+To select the UI manually: /script prk_aou_default
+To restore the game's default selection: /script ao_original
+To remove installed files: close PRK, then run Uninstall.ps1.
+
+Original upstream AOU design: Scene. Upstream AOU version: 1.2.5.
