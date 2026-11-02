@@ -51,6 +51,8 @@ with the chosen PRK GamePath if those local sounds are needed.
 
 Armor controls are not built into this base package. The separate PRK-compatible
 armor installer can add its optional controls after this GUI is installed.
+With that profile installed, use **PRK Armor Packs** to start the normal PRK
+launcher with material hot reload enabled, then handle login normally.
 
 ## Remove
 
@@ -71,8 +73,9 @@ that conflict rather than force a stale backup over user work.
 The prepared package and actual installation passed these focused checks:
 
 - 710 deployed file hashes matched the prepared plan.
-- All nine locally copied native definitions (three layouts each containing
-  Settings Root, HotKeys and Skills) matched PRK Default byte-for-byte.
+- Before the optional armor controls were added, all nine locally copied native
+  definitions (three layouts each containing Settings Root, HotKeys and Skills)
+  matched PRK Default byte-for-byte.
 - All 153 native settings bindings/types/values/categories were preserved.
 - GUIName activation/restoration retained unrelated preferences changed during
   play; duplicate GUIName values were rejected.
@@ -80,9 +83,14 @@ The prepared package and actual installation passed these focused checks:
   deployment XML definitions also accommodates the client's raw HTML attribute
   dialect in its native Skills view without changing the deployed bytes.
 
-These are source/deployment checks, not an observed in-game GUI run. Equipped-
-armor appearance testing was waived for the new account. Existing PRK browser/
-renderer modifications were preserved; no launcher or authentication was automated.
+After login, the AOU HUD and native Preferences loaded in PRK. The renderer's
+AOReloaded, Renderer and Advanced categories remained present alongside the
+optional Armor Packs category. One off/on pair for each armor checkbox reached
+the companion and removed/restored the correct seven body maps or one tank map.
+This is a focused GUI/backend check, not a test of every menu or rendered armor.
+Equipped-armor appearance testing was waived for the new account. Existing PRK
+browser/renderer modifications were preserved. The launcher was restarted normally
+for the optional armor profile; authentication was not automated.
 
 No account data, private paths, deployment logs, original sound files, database
 records or backups are part of this repository. Read [AGENTS.md](AGENTS.md)
