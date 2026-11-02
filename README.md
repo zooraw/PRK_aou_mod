@@ -51,6 +51,9 @@ with the chosen PRK GamePath if those local sounds are needed.
 
 Armor controls are not built into this base package. The separate PRK-compatible
 armor installer can add its optional controls after this GUI is installed.
+Download the [PRK armor source package](https://github.com/zooraw/ao-armor-packs/archive/refs/heads/codex/prk-support.zip)
+and follow its [PRK installation guide](https://github.com/zooraw/ao-armor-packs/blob/codex/prk-support/docs/PRK.md).
+The retail v1.0.0 armor release does not include the PRK installer.
 With that profile installed, use **PRK Armor Packs** to start the normal PRK
 launcher with material hot reload enabled, then handle login normally.
 
